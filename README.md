@@ -25,7 +25,7 @@ Note: ***building using docker container on MacOS is not supported for the momen
    bitbake amlogic-yocto
    ```
 
-   Optionally, if your machine has more cpu cores than 4, you can edit build/conf/local.conf, before launching the last bitbake command, to add following statements
+   Optionally, if your machine has more cpu cores than 4, e.g., 8, you can edit build/conf/local.conf, before launching the last bitbake command, to add following statements
 
    ```
    BB_NUMBER_THREADS = "8"
