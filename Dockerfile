@@ -2,8 +2,8 @@
 FROM ubuntu:18.04
 LABEL org.opencontainers.image.authors="dongsheng.qu@roadwaysmart.com"
 
+COPY repo /usr/local/bin
 RUN groupadd -r ubuntu && useradd --no-log-init -r -g ubuntu ubuntu
-
 RUN apt update && apt purge libc6-dev && \
   apt install -y --no-install-recommends \
     locales libc6-dev libc6-dev-i386 gcc-multilib g++-multilib libssl-dev libncurses-dev \
