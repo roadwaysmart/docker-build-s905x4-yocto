@@ -9,7 +9,8 @@ RUN apt update && \
   apt install -y --no-install-recommends \
     locales gcc-multilib g++-multilib libssl-dev libncurses-dev \
     build-essential bison flex python python3 python3-distutils net-tools openssh-client \
-    chrpath cpio diffstat file gawk git wget vim tmux iputils-ping ca-certificates less && \
+    chrpath cpio diffstat file gawk git wget vim tmux iputils-ping ca-certificates less \
+    unzip zip && \
   rm -rf /var/lib/apt/lists/* && \
   localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 && \
   update-ca-certificates
